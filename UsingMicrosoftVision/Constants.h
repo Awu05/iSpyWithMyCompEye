@@ -10,6 +10,6 @@
 
 @interface Constants : NSObject
 
-    extern NSString *const myKey;
+extern NSString *const myKey;
 
 @end
