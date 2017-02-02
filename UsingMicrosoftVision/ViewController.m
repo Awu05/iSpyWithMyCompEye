@@ -23,9 +23,7 @@
     [self presentViewController:picker animated:YES completion:nil];
      */
     
-    QuestionViewController *qVC = [[QuestionViewController alloc]
-                                  initWithNibName:@"QuestionViewController" bundle:nil];
-    [self presentViewController:qVC animated:YES completion:nil];
+    
 }
 
 
@@ -84,5 +82,11 @@
 }
 
 
+
+- (IBAction)officeSupplyBtn:(UIButton *)sender {
+    QuestionViewController *qVC = [[QuestionViewController alloc]
+                                   initWithNibName:@"QuestionViewController" bundle:nil];
+    [self presentViewController:qVC animated:YES completion:nil];
+}
 
 @end

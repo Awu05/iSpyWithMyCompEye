@@ -17,5 +17,8 @@
 - (IBAction)sendImageFromURL:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextField *urlTextField;
 
+- (IBAction)officeSupplyBtn:(UIButton *)sender;
+
+
 @end
 
