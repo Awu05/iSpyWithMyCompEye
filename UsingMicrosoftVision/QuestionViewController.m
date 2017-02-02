@@ -85,6 +85,7 @@
         
         dispatch_async(dispatch_get_main_queue(), ^{
             self.cVC.dictToParse = jsonDictionary;
+            self.cVC.itemToFind = self.objectToFind.text;
             
             [[NSNotificationCenter defaultCenter] postNotificationName:@"downloadDataComplete" object:nil];
         });
