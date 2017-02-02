@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Constants.h"
 
 @interface QuestionViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
