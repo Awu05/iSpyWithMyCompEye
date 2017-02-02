@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "Constants.h"
+#import "ConfirmationViewController.h"
 
 @interface QuestionViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @property (nonatomic, retain) UIImagePickerController *imagePickerController;
+
+@property (nonatomic, retain) ConfirmationViewController *cVC;
 
 @property (weak, nonatomic) IBOutlet UILabel *questionNumLabel;
 
