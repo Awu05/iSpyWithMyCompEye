@@ -21,6 +21,48 @@
     self.questionNum = 1;
     
     self.questionNumLabel.text = [NSString stringWithFormat:@"Question: %d", self.questionNum];
+    
+    if (self.isOfficeObjects == YES) {
+        
+        self.officeObjects = [[NSMutableArray alloc]initWithObjects:@"stapler", @"laptop", @"writing implement", @"cup", @"keyboard", @"scissors", @"chair", @"suit", @"cellphone", @"book", nil];
+        
+    } else if (self.isHomeFurnishings == YES) {
+        //home furnishings
+        
+        
+        
+    } else if (self.isChallengeObjects == YES) {
+        
+        self.challengeObjects = [[NSMutableArray alloc]initWithObjects:@"flying", @"holding", @"wooden", @"green", @"yellow", nil];
+        
+        
+    }
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    if (self.isOfficeObjects == YES) {
+        
+        
+        
+        int i = (int) self.officeObjects.count;
+        self.r = arc4random_uniform(i);
+        
+        self.objectToFind.text = [self.officeObjects objectAtIndex:self.r];
+        
+        
+    } else if (self.isHomeFurnishings == YES) {
+        //home furnishings
+        
+        
+        
+    } else if (self.isChallengeObjects == YES) {
+        
+        
+        int i = (int) self.challengeObjects.count;
+        self.r = arc4random_uniform(i);
+        
+        self.objectToFind.text = [self.challengeObjects objectAtIndex:self.r];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,7 +101,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
     
     self.cVC = [[ConfirmationViewController alloc]
-                                       initWithNibName:@"ConfirmationViewController" bundle:nil];
+                initWithNibName:@"ConfirmationViewController" bundle:nil];
     
     self.cVC.imgData = imageData;
     [self presentViewController:self.cVC animated:YES completion:nil];
@@ -89,7 +131,7 @@
             
             [[NSNotificationCenter defaultCenter] postNotificationName:@"downloadDataComplete" object:nil];
         });
-
+        
         
         
     }
@@ -97,8 +139,33 @@
 }
 
 - (IBAction)skipBtn:(UIButton *)sender {
-    
+   
+    if (self.isOfficeObjects == YES) {
+        
+        [self.officeObjects removeObject:self.objectToFind.text];
+        
+        int i = (int) self.officeObjects.count;
+        self.r = arc4random_uniform(i);
+        
+        self.objectToFind.text = [self.officeObjects objectAtIndex:self.r];
+        
+        
+    } else if (self.isHomeFurnishings == YES) {
+        //home furnishings
+        
+        
+        
+    } else if (self.isChallengeObjects == YES) {
+        
+        
+        int i = (int) self.challengeObjects.count;
+        self.r = arc4random_uniform(i);
+        
+        self.objectToFind.text = [self.challengeObjects objectAtIndex:self.r];
+    }
 }
+
+
 
 - (void) noCamera {
     UIAlertController * alert=   [UIAlertController
