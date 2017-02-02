@@ -20,11 +20,24 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *objectToFind;
 
+@property (nonatomic, retain) NSString *item;
+
 - (IBAction)startCameraBtn:(UIButton *)sender;
 
 - (IBAction)skipBtn:(UIButton *)sender;
 
 @property int questionNum;
+
+@property BOOL isOfficeObjects;
+@property BOOL isHomeFurnishings;
+@property BOOL isChallengeObjects;
+
+@property (strong, nonatomic) NSMutableArray *officeObjects;
+@property (strong, nonatomic) NSMutableArray *homeFurnishings;
+@property (strong, nonatomic) NSMutableArray *challengeObjects;
+
+@property int r;
+
 
 
 @end

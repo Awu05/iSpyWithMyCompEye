@@ -25,6 +25,10 @@
 		C3010DDF1E43BC6D0029CB8C /* ConfirmationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3010DDD1E43BC6D0029CB8C /* ConfirmationViewController.xib */; };
 		E87EC68A1E43CA0E002106F1 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E87EC6881E43CA0E002106F1 /* QuestionViewController.m */; };
 		E87EC68B1E43CA0E002106F1 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87EC6891E43CA0E002106F1 /* QuestionViewController.xib */; };
+<<<<<<< HEAD
+=======
+		E87EC68F1E43F0D5002106F1 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = E87EC68E1E43F0D5002106F1 /* Constants.m */; };
+>>>>>>> 2a947b40e4525e9fb1178d39bb539cf6d1f0560a
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,10 @@
 		E87EC6871E43CA0E002106F1 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
 		E87EC6881E43CA0E002106F1 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
 		E87EC6891E43CA0E002106F1 /* QuestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		E87EC68E1E43F0D5002106F1 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+>>>>>>> 2a947b40e4525e9fb1178d39bb539cf6d1f0560a
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +100,11 @@
 				9E9CA0BC1E4102C2002489B5 /* AppDelegate.h */,
 				9E9CA0BD1E4102C2002489B5 /* AppDelegate.m */,
 				E87EC67D1E43AF1A002106F1 /* Constants.h */,
+<<<<<<< HEAD
 				00EBE3C91E43EB9400203079 /* Constants.m */,
+=======
+				E87EC68E1E43F0D5002106F1 /* Constants.m */,
+>>>>>>> 2a947b40e4525e9fb1178d39bb539cf6d1f0560a
 				9E9CA0BF1E4102C2002489B5 /* ViewController.h */,
 				9E9CA0C01E4102C2002489B5 /* ViewController.m */,
 				E87EC6871E43CA0E002106F1 /* QuestionViewController.h */,
@@ -209,7 +221,11 @@
 				9E9CA0BE1E4102C2002489B5 /* AppDelegate.m in Sources */,
 				9E9CA0BB1E4102C2002489B5 /* main.m in Sources */,
 				C3010DDE1E43BC6D0029CB8C /* ConfirmationViewController.m in Sources */,
+<<<<<<< HEAD
 				00EBE3CA1E43EB9400203079 /* Constants.m in Sources */,
+=======
+				E87EC68F1E43F0D5002106F1 /* Constants.m in Sources */,
+>>>>>>> 2a947b40e4525e9fb1178d39bb539cf6d1f0560a
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

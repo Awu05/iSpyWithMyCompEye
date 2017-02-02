@@ -29,4 +29,8 @@
 
 @property (retain, nonatomic) NSDictionary *dictToParse;
 
+@property (retain, nonatomic) NSString *itemToFind;
+
+@property BOOL didItemMatch;
+
 @end
