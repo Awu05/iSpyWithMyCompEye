@@ -25,4 +25,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *nextObject;
 - (IBAction)didPressNextButton:(id)sender;
 
+@property (retain, nonatomic) NSData *imgData;
+
+@property (retain, nonatomic) NSDictionary *dictToParse;
+
 @end
