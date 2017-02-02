@@ -13,6 +13,7 @@
 		9E9CA0C41E4102C2002489B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9CA0C21E4102C2002489B5 /* Main.storyboard */; };
 		9E9CA0C61E4102C2002489B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E9CA0C51E4102C2002489B5 /* Assets.xcassets */; };
 		9E9CA0C91E4102C2002489B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9CA0C71E4102C2002489B5 /* LaunchScreen.storyboard */; };
+		E87EC67F1E43AF1A002106F1 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = E87EC67E1E43AF1A002106F1 /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		9E9CA0C51E4102C2002489B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E9CA0C81E4102C2002489B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E9CA0CA1E4102C2002489B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E87EC67D1E43AF1A002106F1 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		E87EC67E1E43AF1A002106F1 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				9E9CA0BC1E4102C2002489B5 /* AppDelegate.h */,
+				E87EC67D1E43AF1A002106F1 /* Constants.h */,
+				E87EC67E1E43AF1A002106F1 /* Constants.m */,
 				9E9CA0BD1E4102C2002489B5 /* AppDelegate.m */,
 				9E9CA0BF1E4102C2002489B5 /* ViewController.h */,
 				9E9CA0C01E4102C2002489B5 /* ViewController.m */,
@@ -154,6 +159,7 @@
 				9E9CA0C11E4102C2002489B5 /* ViewController.m in Sources */,
 				9E9CA0BE1E4102C2002489B5 /* AppDelegate.m in Sources */,
 				9E9CA0BB1E4102C2002489B5 /* main.m in Sources */,
+				E87EC67F1E43AF1A002106F1 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +318,7 @@
 				9E9CA0CF1E4102C2002489B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

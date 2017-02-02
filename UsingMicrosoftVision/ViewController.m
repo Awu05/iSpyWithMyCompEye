@@ -31,11 +31,11 @@
     NSData *jsonBody = [NSJSONSerialization dataWithJSONObject:urlBody options:kNilOptions error:nil];
     
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
-    NSURL *url = [NSURL URLWithString:@"https://westus.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Description,Tags,Color,Faces,Categories&language=en"];
+    NSURL *url = [NSURL URLWithString:@"https://westus.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Tags,Categories&language=en"];
     
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     request.HTTPBody = jsonBody;
-    [request addValue:@"f006dbe4775c4d2b9bd66aa69f4158da" forHTTPHeaderField:@"Ocp-Apim-Subscription-Key"];
+    [request addValue:myKey forHTTPHeaderField:@"Ocp-Apim-Subscription-Key"];
     [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     request.HTTPMethod = @"POST";
     
@@ -65,7 +65,7 @@
     NSURL *url = [NSURL URLWithString:@"https://westus.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Description,Tags,Color,Faces,Categories&language=en"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     request.HTTPBody = imageData;
-    [request addValue:@"f006dbe4775c4d2b9bd66aa69f4158da" forHTTPHeaderField:@"Ocp-Apim-Subscription-Key"];
+    [request addValue:myKey forHTTPHeaderField:@"Ocp-Apim-Subscription-Key"];
     [request addValue:@"application/octet-stream" forHTTPHeaderField:@"Content-Type"];
     request.HTTPMethod = @"POST";
     
