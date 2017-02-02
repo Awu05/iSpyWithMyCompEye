@@ -26,5 +26,16 @@
 
 @property int questionNum;
 
+@property BOOL isOfficeObjects;
+@property BOOL isHomeFurnishings;
+@property BOOL isChallengeObjects;
+
+@property (strong, nonatomic) NSMutableArray *officeObjects;
+@property (strong, nonatomic) NSMutableArray *homeFurnishings;
+@property (strong, nonatomic) NSMutableArray *challengeObjects;
+
+@property int r;
+
+
 
 @end
