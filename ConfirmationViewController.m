@@ -82,7 +82,4 @@
 - (IBAction)didPressNextButton:(id)sender {
 }
 
--(void)voidMethod {
-    NSArray *officeObjects = [NSArray arrayWithObjects:@"stapler", @"laptop", @"writing implement", @"cup", @"keyboard", @"scissors", @"chair", @"suit", @"cellphone", nil];
-}
 @end

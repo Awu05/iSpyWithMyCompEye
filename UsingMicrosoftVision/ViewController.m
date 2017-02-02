@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#include <stdlib.h>
+
 
 @interface ViewController ()
 
@@ -87,6 +89,17 @@
     QuestionViewController *qVC = [[QuestionViewController alloc]
                                    initWithNibName:@"QuestionViewController" bundle:nil];
     [self presentViewController:qVC animated:YES completion:nil];
+    
+    NSArray *officeObjects = [NSArray arrayWithObjects:@"stapler", @"laptop", @"writing implement", @"cup", @"keyboard", @"scissors", @"chair", @"suit", @"cellphone", @"book", nil];
+    
+    int i = (int) officeObjects.count;
+    int r = arc4random_uniform(i);
+    
+    qVC.objectToFind.text = [officeObjects objectAtIndex:r];
+    
+    //when we connect the challenge button put this array into the method
+//            NSArray *challengeObjects = [NSArray arrayWithObjects:@"flying", @"holding", @"wooden", @"green", @"yellow", nil];
+
 }
 
 @end
