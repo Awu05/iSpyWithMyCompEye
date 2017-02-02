@@ -16,11 +16,16 @@
 
 
 - (IBAction)pickImage:(id)sender {
-    
+    /*
     UIImagePickerController *picker = [[UIImagePickerController alloc]init];
     picker.delegate = self;
     picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     [self presentViewController:picker animated:YES completion:nil];
+     */
+    
+    QuestionViewController *qVC = [[QuestionViewController alloc]
+                                  initWithNibName:@"QuestionViewController" bundle:nil];
+    [self presentViewController:qVC animated:YES completion:nil];
 }
 
 
