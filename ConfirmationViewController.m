@@ -83,6 +83,6 @@
 }
 
 -(void)voidMethod {
-    NSArray *officeObjects = [NSArray arrayWithObjects:@"stapler", @"laptop", @"writing implement", @"coffee", @"keyboard", @"scissors", @"", nil];
+    NSArray *officeObjects = [NSArray arrayWithObjects:@"stapler", @"laptop", @"writing implement", @"cup", @"keyboard", @"scissors", @"chair", @"suit", @"cellphone", nil];
 }
 @end
