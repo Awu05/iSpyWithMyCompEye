@@ -13,6 +13,8 @@
 		00EBE3C21E43D8EB00203079 /* ispy-bkg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EBE3C11E43D8EB00203079 /* ispy-bkg2.png */; };
 		00EBE3C61E43DD4600203079 /* wildtextures-creased-black-paper-texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00EBE3C51E43DD4600203079 /* wildtextures-creased-black-paper-texture.jpg */; };
 		00EBE3C81E43E40000203079 /* iSpyLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EBE3C71E43E40000203079 /* iSpyLogo.png */; };
+		00EBE3CA1E43EB9400203079 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EBE3C91E43EB9400203079 /* Constants.m */; };
+		00EBE3CD1E43F96F00203079 /* FinalScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EBE3CC1E43F96F00203079 /* FinalScoreViewController.m */; };
 		9E9CA0BB1E4102C2002489B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CA0BA1E4102C2002489B5 /* main.m */; };
 		9E9CA0BE1E4102C2002489B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CA0BD1E4102C2002489B5 /* AppDelegate.m */; };
 		9E9CA0C11E4102C2002489B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CA0C01E4102C2002489B5 /* ViewController.m */; };
@@ -23,7 +25,6 @@
 		C3010DDF1E43BC6D0029CB8C /* ConfirmationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3010DDD1E43BC6D0029CB8C /* ConfirmationViewController.xib */; };
 		E87EC68A1E43CA0E002106F1 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E87EC6881E43CA0E002106F1 /* QuestionViewController.m */; };
 		E87EC68B1E43CA0E002106F1 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87EC6891E43CA0E002106F1 /* QuestionViewController.xib */; };
-		E87EC68D1E43D891002106F1 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = E87EC68C1E43D891002106F1 /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,9 @@
 		00EBE3C11E43D8EB00203079 /* ispy-bkg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ispy-bkg2.png"; sourceTree = "<group>"; };
 		00EBE3C51E43DD4600203079 /* wildtextures-creased-black-paper-texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wildtextures-creased-black-paper-texture.jpg"; sourceTree = "<group>"; };
 		00EBE3C71E43E40000203079 /* iSpyLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iSpyLogo.png; sourceTree = "<group>"; };
+		00EBE3C91E43EB9400203079 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		00EBE3CB1E43F96F00203079 /* FinalScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalScoreViewController.h; sourceTree = "<group>"; };
+		00EBE3CC1E43F96F00203079 /* FinalScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalScoreViewController.m; sourceTree = "<group>"; };
 		9E9CA0B61E4102C2002489B5 /* UsingMicrosoftVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsingMicrosoftVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9CA0BA1E4102C2002489B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9E9CA0BC1E4102C2002489B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,7 +54,6 @@
 		E87EC6871E43CA0E002106F1 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
 		E87EC6881E43CA0E002106F1 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
 		E87EC6891E43CA0E002106F1 /* QuestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
-		E87EC68C1E43D891002106F1 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,13 +92,15 @@
 				9E9CA0BC1E4102C2002489B5 /* AppDelegate.h */,
 				9E9CA0BD1E4102C2002489B5 /* AppDelegate.m */,
 				E87EC67D1E43AF1A002106F1 /* Constants.h */,
-				E87EC68C1E43D891002106F1 /* Constants.m */,
+				00EBE3C91E43EB9400203079 /* Constants.m */,
 				9E9CA0BF1E4102C2002489B5 /* ViewController.h */,
 				9E9CA0C01E4102C2002489B5 /* ViewController.m */,
 				E87EC6871E43CA0E002106F1 /* QuestionViewController.h */,
 				E87EC6881E43CA0E002106F1 /* QuestionViewController.m */,
 				E87EC6891E43CA0E002106F1 /* QuestionViewController.xib */,
 				9E9CA0C21E4102C2002489B5 /* Main.storyboard */,
+				00EBE3CB1E43F96F00203079 /* FinalScoreViewController.h */,
+				00EBE3CC1E43F96F00203079 /* FinalScoreViewController.m */,
 				00EBE3C51E43DD4600203079 /* wildtextures-creased-black-paper-texture.jpg */,
 				00EBE3C11E43D8EB00203079 /* ispy-bkg2.png */,
 				00EBE3C71E43E40000203079 /* iSpyLogo.png */,
@@ -149,7 +154,7 @@
 				TargetAttributes = {
 					9E9CA0B51E4102C2002489B5 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = R52DFB482J;
+						DevelopmentTeam = X9KW2SQ39Q;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -199,11 +204,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E9CA0C11E4102C2002489B5 /* ViewController.m in Sources */,
+				00EBE3CD1E43F96F00203079 /* FinalScoreViewController.m in Sources */,
 				E87EC68A1E43CA0E002106F1 /* QuestionViewController.m in Sources */,
 				9E9CA0BE1E4102C2002489B5 /* AppDelegate.m in Sources */,
 				9E9CA0BB1E4102C2002489B5 /* main.m in Sources */,
 				C3010DDE1E43BC6D0029CB8C /* ConfirmationViewController.m in Sources */,
-				E87EC68D1E43D891002106F1 /* Constants.m in Sources */,
+				00EBE3CA1E43EB9400203079 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,10 +329,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = R52DFB482J;
+				DEVELOPMENT_TEAM = X9KW2SQ39Q;
 				INFOPLIST_FILE = UsingMicrosoftVision/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wu.andy.reah;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.turntotech.tutorial.NaturalRemedies-CV";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -335,10 +341,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = R52DFB482J;
+				DEVELOPMENT_TEAM = X9KW2SQ39Q;
 				INFOPLIST_FILE = UsingMicrosoftVision/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wu.andy.reah;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.turntotech.tutorial.NaturalRemedies-CV";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
