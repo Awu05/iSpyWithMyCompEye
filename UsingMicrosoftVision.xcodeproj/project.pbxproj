@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00EBE3B41E43BFBE00203079 /* eye-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EBE3B31E43BFBE00203079 /* eye-icon.png */; };
+		00EBE3B61E43C29400203079 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EBE3B51E43C29400203079 /* heart.png */; };
+		00EBE3B81E43C43000203079 /* cameraIcon-thumbn-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EBE3B71E43C43000203079 /* cameraIcon-thumbn-on.png */; };
 		9E9CA0BB1E4102C2002489B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CA0BA1E4102C2002489B5 /* main.m */; };
 		9E9CA0BE1E4102C2002489B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CA0BD1E4102C2002489B5 /* AppDelegate.m */; };
 		9E9CA0C11E4102C2002489B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CA0C01E4102C2002489B5 /* ViewController.m */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00EBE3B31E43BFBE00203079 /* eye-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye-icon.png"; sourceTree = "<group>"; };
+		00EBE3B51E43C29400203079 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		00EBE3B71E43C43000203079 /* cameraIcon-thumbn-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraIcon-thumbn-on.png"; sourceTree = "<group>"; };
 		9E9CA0B61E4102C2002489B5 /* UsingMicrosoftVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsingMicrosoftVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9CA0BA1E4102C2002489B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9E9CA0BC1E4102C2002489B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,16 +75,23 @@
 		9E9CA0B81E4102C2002489B5 /* UsingMicrosoftVision */ = {
 			isa = PBXGroup;
 			children = (
+				E87EC67E1E43AF1A002106F1 /* Constants.m */,
 				9E9CA0BC1E4102C2002489B5 /* AppDelegate.h */,
 				E87EC67D1E43AF1A002106F1 /* Constants.h */,
 				C3010DD41E43B4540029CB8C /* Constants.m */,
 				9E9CA0BD1E4102C2002489B5 /* AppDelegate.m */,
 				9E9CA0BF1E4102C2002489B5 /* ViewController.h */,
 				9E9CA0C01E4102C2002489B5 /* ViewController.m */,
+				E87EC6801E43BD04002106F1 /* QuestionViewController.h */,
+				E87EC6811E43BD04002106F1 /* QuestionViewController.m */,
+				E87EC6821E43BD04002106F1 /* QuestionViewController.xib */,
 				9E9CA0C21E4102C2002489B5 /* Main.storyboard */,
 				9E9CA0C51E4102C2002489B5 /* Assets.xcassets */,
 				9E9CA0C71E4102C2002489B5 /* LaunchScreen.storyboard */,
 				9E9CA0CA1E4102C2002489B5 /* Info.plist */,
+				00EBE3B31E43BFBE00203079 /* eye-icon.png */,
+				00EBE3B71E43C43000203079 /* cameraIcon-thumbn-on.png */,
+				00EBE3B51E43C29400203079 /* heart.png */,
 				9E9CA0B91E4102C2002489B5 /* Supporting Files */,
 			);
 			path = UsingMicrosoftVision;
@@ -150,8 +163,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00EBE3B41E43BFBE00203079 /* eye-icon.png in Resources */,
 				9E9CA0C91E4102C2002489B5 /* LaunchScreen.storyboard in Resources */,
+				00EBE3B81E43C43000203079 /* cameraIcon-thumbn-on.png in Resources */,
+				00EBE3B61E43C29400203079 /* heart.png in Resources */,
 				9E9CA0C61E4102C2002489B5 /* Assets.xcassets in Resources */,
+				E87EC6841E43BD04002106F1 /* QuestionViewController.xib in Resources */,
 				9E9CA0C41E4102C2002489B5 /* Main.storyboard in Resources */,
 				C3010DDF1E43BC6D0029CB8C /* ConfirmationViewController.xib in Resources */,
 			);
@@ -166,6 +183,7 @@
 			files = (
 				C3010DD51E43B4540029CB8C /* Constants.m in Sources */,
 				9E9CA0C11E4102C2002489B5 /* ViewController.m in Sources */,
+				E87EC6831E43BD04002106F1 /* QuestionViewController.m in Sources */,
 				9E9CA0BE1E4102C2002489B5 /* AppDelegate.m in Sources */,
 				9E9CA0BB1E4102C2002489B5 /* main.m in Sources */,
 				C3010DDE1E43BC6D0029CB8C /* ConfirmationViewController.m in Sources */,
@@ -291,7 +309,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UsingMicrosoftVision/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sahlitude.UsingMicrosoftVision;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wu.andy.reah;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -303,7 +321,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UsingMicrosoftVision/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sahlitude.UsingMicrosoftVision;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wu.andy.reah;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
