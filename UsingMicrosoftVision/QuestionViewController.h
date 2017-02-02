@@ -20,6 +20,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *objectToFind;
 
+@property (nonatomic, retain) NSString *item;
+
 - (IBAction)startCameraBtn:(UIButton *)sender;
 
 - (IBAction)skipBtn:(UIButton *)sender;

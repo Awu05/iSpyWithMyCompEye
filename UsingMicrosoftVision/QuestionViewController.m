@@ -45,7 +45,7 @@
         
         
         int i = (int) self.officeObjects.count;
-        self.r = arc4random_uniform(i);
+        self.r = arc4random_uniform(i-1);
         
         self.objectToFind.text = [self.officeObjects objectAtIndex:self.r];
         
@@ -63,6 +63,9 @@
         
         self.objectToFind.text = [self.challengeObjects objectAtIndex:self.r];
     }
+    
+    self.item = self.objectToFind.text;
+    NSLog(@"Label Object: %@", self.item);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -103,6 +106,8 @@
     self.cVC = [[ConfirmationViewController alloc]
                 initWithNibName:@"ConfirmationViewController" bundle:nil];
     
+    self.cVC.itemToFind = self.item;
+    
     self.cVC.imgData = imageData;
     [self presentViewController:self.cVC animated:YES completion:nil];
     
@@ -127,7 +132,8 @@
         
         dispatch_async(dispatch_get_main_queue(), ^{
             self.cVC.dictToParse = jsonDictionary;
-            self.cVC.itemToFind = self.objectToFind.text;
+            
+            NSLog(@"OBJ TO FIND: %@", self.cVC.itemToFind);
             
             [[NSNotificationCenter defaultCenter] postNotificationName:@"downloadDataComplete" object:nil];
         });
@@ -163,6 +169,9 @@
         
         self.objectToFind.text = [self.challengeObjects objectAtIndex:self.r];
     }
+    
+    self.item = self.objectToFind.text;
+    NSLog(@"Label Object: %@", self.item);
 }
 
 

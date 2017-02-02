@@ -65,7 +65,7 @@
         }
     }
     
-    if (!self.didItemMatch) {
+    if (self.didItemMatch == false) {
         self.confirmationTextView.text = [NSString stringWithFormat:@"That object was not %@-y enough!", self.itemToFind];
     }
 }

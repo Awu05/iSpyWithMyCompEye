@@ -78,7 +78,7 @@
     [[session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         [self.activityIndicator stopAnimating];
         NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-        NSLog(@"WHAT WE GOT BACK: %@", jsonDictionary);
+        //NSLog(@"WHAT WE GOT BACK: %@", jsonDictionary);
     }
       ]resume];
 }
