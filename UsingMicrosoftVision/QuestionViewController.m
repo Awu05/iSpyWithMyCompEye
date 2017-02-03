@@ -22,6 +22,8 @@
     
     self.questionNumLabel.text = [NSString stringWithFormat:@"Question: %d", self.questionNum];
     
+    self.numberOfSkips = 3;
+    
     if (self.isOfficeObjects == YES) {
         
         self.officeObjects = [[NSMutableArray alloc]initWithObjects:@"stapler", @"laptop", @"writing implement", @"cup", @"keyboard", @"scissors", @"chair", @"suit", @"cellphone", @"book", nil];
@@ -172,6 +174,17 @@
     
     self.item = self.objectToFind.text;
     NSLog(@"Label Object: %@", self.item);
+    
+    if (self.numberOfSkips == 3) {
+        //do nothing
+    } else if (self.numberOfSkips == 2) {
+        [self.heart1 setHidden:YES];
+    } else if (self.numberOfSkips == 1) {
+        [self.heart1 setHidden:YES];
+        [self.heart2 setHidden:YES];
+    }
+    
+    
 }
 
 

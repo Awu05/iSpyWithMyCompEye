@@ -36,6 +36,12 @@
 @property (strong, nonatomic) NSMutableArray *homeFurnishings;
 @property (strong, nonatomic) NSMutableArray *challengeObjects;
 
+
+@property (weak, nonatomic) IBOutlet UIImageView *heart1;
+@property (weak, nonatomic) IBOutlet UIImageView *heart2;
+@property (weak, nonatomic) IBOutlet UIImageView *heart3;
+@property int numberOfSkips;
+
 @property int r;
 
 
