@@ -32,7 +32,6 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
-    self.totalNumberOfAnswers += 1;
     NSString *string = [NSString stringWithFormat:@"%ld/5",(long)self.totalNumberOfAnswers];
     self.numberOfAnswersLabel.text = string;
 }
@@ -73,7 +72,7 @@
     
     if (self.didItemMatch == false) {
         self.confirmationTextView.text = [NSString stringWithFormat:@"\nThat object was not %@-y enough!", self.itemToFind];
-        self.totalNumberOfAnswers += 1;
+//        self.totalNumberOfAnswers += 1;
     }
     
 }

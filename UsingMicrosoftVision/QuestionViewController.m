@@ -122,10 +122,12 @@
     
     [self dismissViewControllerAnimated:YES completion:nil];
     
+    
     self.cVC = [[ConfirmationViewController alloc]
                 initWithNibName:@"ConfirmationViewController" bundle:nil];
     
     self.cVC.itemToFind = self.item;
+    self.cVC.totalNumberOfAnswers = self.numberOfAnswers;
     
     self.cVC.imgData = imageData;
     [self presentViewController:self.cVC animated:YES completion:nil];
