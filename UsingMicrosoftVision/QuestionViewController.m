@@ -176,13 +176,18 @@
     NSLog(@"Label Object: %@", self.item);
     
     if (self.numberOfSkips == 3) {
-        //do nothing
+        [self.heart1 setHidden:YES];
     } else if (self.numberOfSkips == 2) {
         [self.heart1 setHidden:YES];
-    } else if (self.numberOfSkips == 1) {
-        [self.heart1 setHidden:YES];
         [self.heart2 setHidden:YES];
+    } else if (self.numberOfSkips == 1) {
+        //push to the "you lose" viewcontroller
+        
+        
+        
     }
+    
+    self.numberOfSkips = (self.numberOfSkips-1);
     
     
 }
