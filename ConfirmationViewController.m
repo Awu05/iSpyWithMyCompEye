@@ -29,7 +29,12 @@
         [self dataReceived:note];
     }];
     
-    
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    self.totalNumberOfAnswers += 1;
+    NSString *string = [NSString stringWithFormat:@"%ld/5",(long)self.totalNumberOfAnswers];
+    self.numberOfAnswersLabel.text = string;
 }
 
 
@@ -62,13 +67,11 @@
             self.didItemMatch = true;
             self.confirmationTextView.text = @"You found it!";
             self.numberOfCorrectAnswers += 1;
-//            self.totalNumberOfAnswers += 1;
         }
     }
     
     if (self.didItemMatch == false) {
         self.confirmationTextView.text = [NSString stringWithFormat:@"That object was not %@-y enough!", self.itemToFind];
-        self.totalNumberOfAnswers += 1;
     }
     
 }

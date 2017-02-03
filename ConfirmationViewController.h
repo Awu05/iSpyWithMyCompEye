@@ -34,6 +34,7 @@
 @property BOOL didItemMatch;
 
 @property int numberOfCorrectAnswers;
-@property int totalNumberOfAnswers;
+@property NSInteger totalNumberOfAnswers;
+@property (weak, nonatomic) IBOutlet UILabel *numberOfAnswersLabel;
 
 @end

@@ -42,40 +42,47 @@
     }
     
     self.numberOfAnswers = 0;
+    self.isSecondTimeAppearing = NO;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     
-    self.numberOfAnswers += 1;
-    NSString *numberOfAnswers = [NSString stringWithFormat:@"%d/5", self.numberOfAnswers];
-    self.numberOfAnswersCounter.text = numberOfAnswers;
-    
-    if (self.isOfficeObjects == YES) {
+    if (self.isSecondTimeAppearing == YES) {
+        //hide everything
+        self.isSecondTimeAppearing = NO;
+    } else if (self.isSecondTimeAppearing == NO) {
         
+        self.numberOfAnswers += 1;
+        NSString *numberOfAnswers = [NSString stringWithFormat:@"%d/5", self.numberOfAnswers];
+        self.numberOfAnswersCounter.text = numberOfAnswers;
         
+        if (self.isOfficeObjects == YES) {
+            
+            
+            
+            int i = (int) self.officeObjects.count;
+            self.r = arc4random_uniform(i-1);
+            
+            self.objectToFind.text = [self.officeObjects objectAtIndex:self.r];
+            
+            
+        } else if (self.isHomeFurnishings == YES) {
+            //home furnishings
+            
+            
+            
+        } else if (self.isChallengeObjects == YES) {
+            
+            
+            int i = (int) self.challengeObjects.count;
+            self.r = arc4random_uniform(i);
+            
+            self.objectToFind.text = [self.challengeObjects objectAtIndex:self.r];
+        }
         
-        int i = (int) self.officeObjects.count;
-        self.r = arc4random_uniform(i-1);
-        
-        self.objectToFind.text = [self.officeObjects objectAtIndex:self.r];
-        
-        
-    } else if (self.isHomeFurnishings == YES) {
-        //home furnishings
-        
-        
-        
-    } else if (self.isChallengeObjects == YES) {
-        
-        
-        int i = (int) self.challengeObjects.count;
-        self.r = arc4random_uniform(i);
-        
-        self.objectToFind.text = [self.challengeObjects objectAtIndex:self.r];
+        self.item = self.objectToFind.text;
+        NSLog(@"Label Object: %@", self.item);
     }
-    
-    self.item = self.objectToFind.text;
-    NSLog(@"Label Object: %@", self.item);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -157,7 +164,7 @@
 }
 
 - (IBAction)skipBtn:(UIButton *)sender {
-   
+    
     if (self.isOfficeObjects == YES) {
         
         [self.officeObjects removeObject:self.objectToFind.text];
@@ -176,7 +183,7 @@
     } else if (self.isChallengeObjects == YES) {
         
         [self.challengeObjects removeObject:self.objectToFind.text];
-
+        
         
         int i = (int) self.challengeObjects.count;
         self.r = arc4random_uniform(i);
@@ -197,7 +204,7 @@
 #pragma mark this doesn't work for some reason
         FinalScoreViewController *fsVC = [[FinalScoreViewController alloc]init];
         [self presentViewController:fsVC animated:YES completion:nil];
-
+        
         
     }
     
@@ -231,7 +238,7 @@
 - (IBAction)didPressQuitButton:(id)sender {
     
     [self dismissViewControllerAnimated:YES completion:nil];
-
+    
     
 }
 @end
