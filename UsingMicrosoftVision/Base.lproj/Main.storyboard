@@ -152,12 +152,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDP-LB-GIn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="786" y="-367"/>
+            <point key="canvasLocation" x="644" y="-367"/>
         </scene>
         <!--Final Score-->
         <scene sceneID="gkV-CK-i4d">
             <objects>
-                <viewController title="Final Score" id="9Xa-DO-ETL" customClass="FinalScoreViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="playAgain" title="Final Score" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9Xa-DO-ETL" customClass="FinalScoreViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nwy-yn-zlC"/>
                         <viewControllerLayoutGuide type="bottom" id="FqG-qd-su5"/>
@@ -199,7 +199,7 @@
                                     <color key="titleColor" red="0.35045874119999998" green="0.1432072073" blue="0.68293976779999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="playAgainButtonTapped:" destination="9Xa-DO-ETL" eventType="touchUpInside" id="czn-Uz-6Oi"/>
+                                    <action selector="playAgainButtonTapped:" destination="9Xa-DO-ETL" eventType="touchUpInside" id="wnP-6H-vq3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -222,6 +222,7 @@
                     <connections>
                         <outlet property="finalScoreLabel" destination="H2J-ws-pys" id="Hjt-uy-OEM"/>
                         <outlet property="playAgainButtonTapped" destination="CY7-qx-U24" id="DRv-Mn-kuy"/>
+                        <segue destination="VbK-ka-zQV" kind="show" id="G83-gd-h6f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eFj-a5-xSn" userLabel="First Responder" sceneMemberID="firstResponder"/>
