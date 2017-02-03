@@ -22,7 +22,7 @@
 //This displays whether the user got the item correct or not
 @property (weak, nonatomic) IBOutlet UITextView *confirmationTextView;
 
-//This button either tells you the next object to take a picture of, or if the user has already taken 10 photos, it brings them to the screen with their final score
+//This button either tells you the next object to take a picture of, or if the user has already taken 5 photos, it brings them to the screen with their final score
 @property (weak, nonatomic) IBOutlet UIButton *nextObject;
 - (IBAction)didPressNextButton:(id)sender;
 
@@ -31,8 +31,11 @@
 @property (retain, nonatomic) NSDictionary *dictToParse;
 
 @property (retain, nonatomic) NSString *itemToFind;
+@property (weak, nonatomic) IBOutlet UILabel *numberOfAnswersLabel;
 
 @property BOOL didItemMatch;
-@property int numberOfCorrectAnswers;
+@property int  numberOfCorrectAnswers;
 @property int totalNumberOfAnswers;
+
+
 @end
