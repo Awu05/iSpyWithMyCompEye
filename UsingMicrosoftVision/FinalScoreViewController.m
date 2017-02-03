@@ -16,11 +16,40 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-- (IBAction)playAgainButtonTapped:(UIButton *)sender {
     
+    self.confirmationVC = [[ConfirmationViewController alloc] init];
+    NSString  *feedback;
+    
+    // give user feedback based on numOfCorrectAnswers
+    switch (self.confirmationVC.numOfCorrectAnswers) {
+        case 10:
+        case 9:
+            feedback = @"Great going";
+            break;
+        case 8:
+        case 7:
+            feedback = @"Okay.";
+            break;
+        case 6:
+        case 5:
+            feedback = @"Hmm....";
+            break;
+        default:
+            feedback = @"You desperately need to take classes";
+            break;
+    }
+    
+    // display final score and feedback to user
+    self.finalScoreLabel.text = [NSString stringWithFormat:@"\n\nYou got %d out of %d.\n\n%@",self.confirmationVC.numOfCorrectAnswers, self.confirmationVC.totalNumberOfAnswers, feedback ];
 }
+
+
+- (IBAction)playAgainButtonTapped:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
