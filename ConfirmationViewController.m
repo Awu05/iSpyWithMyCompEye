@@ -67,6 +67,7 @@
             self.didItemMatch = true;
             self.confirmationTextView.text = @"\nYou found it!";
             self.numberOfCorrectAnswers += 1;
+            self.totalNumberOfAnswers += 1;
         }
     }
     
@@ -79,18 +80,18 @@
 
 
 - (IBAction)didPressNextButton:(id)sender {
+    
     if (self.totalNumberOfAnswers < 5) {
         //push to QuestionViewController
         [self dismissViewControllerAnimated:YES completion:nil];
-
         
+    } else  {
         
-    } else if (self.totalNumberOfAnswers <= 5) {
         //push to the "final results" viewcontroller
-        FinalScoreViewController *fsVC = [[FinalScoreViewController alloc]init];
-        [self presentViewController:fsVC animated:YES completion:nil];
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        FinalScoreViewController *myVC = (FinalScoreViewController *)[storyboard instantiateViewControllerWithIdentifier:@"playAgain"];
         
-        
+        [self presentViewController:myVC animated:YES completion:nil];
         
     }
     

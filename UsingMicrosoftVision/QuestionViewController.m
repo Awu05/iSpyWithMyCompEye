@@ -202,8 +202,13 @@
     } else if (self.numberOfSkips == 1) {
         //push to the "you lose" viewcontroller
 #pragma mark this doesn't work for some reason
-        FinalScoreViewController *fsVC = [[FinalScoreViewController alloc]init];
-        [self presentViewController:fsVC animated:YES completion:nil];
+//        FinalScoreViewController *fsVC = [[FinalScoreViewController alloc]init];
+//        [self presentViewController:fsVC animated:YES completion:nil];
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        FinalScoreViewController *myVC = (FinalScoreViewController *)[storyboard instantiateViewControllerWithIdentifier:@"playAgain"];
+        
+        [self presentViewController:myVC animated:YES completion:nil];
         
         
     }

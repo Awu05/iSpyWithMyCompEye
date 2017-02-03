@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VbK-ka-zQV">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VbK-ka-zQV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -221,100 +221,12 @@
                     </view>
                     <connections>
                         <outlet property="finalScoreLabel" destination="H2J-ws-pys" id="Hjt-uy-OEM"/>
-                        <outlet property="playAgainButtonTapped" destination="CY7-qx-U24" id="DRv-Mn-kuy"/>
                         <segue destination="VbK-ka-zQV" kind="show" id="G83-gd-h6f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eFj-a5-xSn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1476" y="-367.46626686656674"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKf-VS-Jbp">
-                                <rect key="frame" x="75" y="155" width="224" height="63"/>
-                                <color key="backgroundColor" red="1" green="0.37471096411261184" blue="0.47965933640828295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="224" id="2Uf-aF-DJ8"/>
-                                    <constraint firstAttribute="height" constant="63" id="wQa-CI-MCL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <state key="normal" title="Select an Image"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="pickImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k2a-5A-IX3"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtj-0X-gT0">
-                                <rect key="frame" x="176" y="323.5" width="23.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Oll-st-Gse">
-                                <rect key="frame" x="44" y="444" width="287" height="70"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGQ-r9-EiO">
-                                        <rect key="frame" x="0.0" y="0.0" width="287" height="30"/>
-                                        <state key="normal" title="Use the image at the URL in the Text Field"/>
-                                        <connections>
-                                            <action selector="sendImageFromURL:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rpi-Tu-sGz"/>
-                                        </connections>
-                                    </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL of an image" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fg6-Hy-vsV">
-                                        <rect key="frame" x="0.0" y="40" width="287" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="f8l-mI-qDN"/>
-                                    <constraint firstAttribute="width" constant="287" id="k73-Bv-q0E"/>
-                                </constraints>
-                            </stackView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ql0-aK-aY2">
-                                <rect key="frame" x="167" y="95" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="FIJ-1c-m2b"/>
-                                    <constraint firstAttribute="height" constant="40" id="HAk-zm-cTB"/>
-                                </constraints>
-                            </activityIndicatorView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="vtj-0X-gT0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0jv-EH-J1P"/>
-                            <constraint firstItem="vtj-0X-gT0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Rh-Ql-X99"/>
-                            <constraint firstItem="Oll-st-Gse" firstAttribute="top" secondItem="vtj-0X-gT0" secondAttribute="bottom" constant="100" id="AZW-ae-EHE"/>
-                            <constraint firstItem="mKf-VS-Jbp" firstAttribute="top" secondItem="ql0-aK-aY2" secondAttribute="bottom" constant="20" id="Cmx-Z2-gAb"/>
-                            <constraint firstItem="ql0-aK-aY2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="MaR-jn-l4s"/>
-                            <constraint firstItem="ql0-aK-aY2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ydj-w7-0lS"/>
-                            <constraint firstItem="mKf-VS-Jbp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="szs-Cf-Azl"/>
-                            <constraint firstItem="Oll-st-Gse" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vPI-Ne-pwE"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="activityIndicator" destination="ql0-aK-aY2" id="42V-bz-Uql"/>
-                        <outlet property="urlTextField" destination="fg6-Hy-vsV" id="nRi-fs-lhB"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="17" y="338"/>
         </scene>
     </scenes>
     <resources>

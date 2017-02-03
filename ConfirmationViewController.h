@@ -11,6 +11,7 @@
 @interface ConfirmationViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (weak, nonatomic) IBOutlet UILabel *numberOfAnswersLabel;
 
 //The object the user just tried to take a picture of
 @property (weak, nonatomic) IBOutlet UILabel *currentObject;
