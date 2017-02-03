@@ -16,6 +16,7 @@
                 <outlet property="confirmationTextView" destination="btK-bB-qrV" id="Y0L-w3-3PG"/>
                 <outlet property="currentObject" destination="cwp-4y-7xM" id="9lo-5n-7Fj"/>
                 <outlet property="nextObject" destination="AFH-Lm-cQ2" id="gux-14-5hW"/>
+                <outlet property="numberOfAnswersLabel" destination="cwp-4y-7xM" id="b4Z-iu-o2I"/>
                 <outlet property="photo" destination="Gd2-6e-Q6m" id="FBS-RO-GhD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
