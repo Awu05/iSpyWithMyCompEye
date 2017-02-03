@@ -51,5 +51,12 @@
 
 @property BOOL isSecondTimeAppearing;
 
+@property (weak, nonatomic) IBOutlet UILabel *findLabel;
+
+
+@property (weak, nonatomic) IBOutlet UIButton *skipButton;
+@property (weak, nonatomic) IBOutlet UIButton *cameraButton;
+
+
 
 @end

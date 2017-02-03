@@ -49,9 +49,35 @@
     
     
     if (self.isSecondTimeAppearing == YES) {
-        //do nothing
+        //hide everything
+        
+        self.findLabel.hidden = YES;
+        self.objectToFind.hidden = YES;
+        self.questionNumLabel.hidden = YES;
+        self.heart1.hidden = YES;
+        self.heart2.hidden = YES;
+        self.heart3.hidden = YES;
+        self.quitButton.hidden = YES;
+        self.cameraButton.hidden = YES;
+        self.skipButton.hidden = YES;
+
+    
+        
         self.isSecondTimeAppearing = NO;
     } else if (self.isSecondTimeAppearing == NO) {
+        
+        //unhide everything
+        self.findLabel.hidden = NO;
+        self.objectToFind.hidden = NO;
+        self.questionNumLabel.hidden = NO;
+        self.heart1.hidden = NO;
+        self.heart2.hidden = NO;
+        self.heart3.hidden = NO;
+        self.quitButton.hidden = NO;
+        self.cameraButton.hidden = NO;
+        self.skipButton.hidden = NO;
+
+        
         
         self.numberOfAnswers += 1;
         NSString *numberOfAnswers = [NSString stringWithFormat:@"%d/5", self.numberOfAnswers];

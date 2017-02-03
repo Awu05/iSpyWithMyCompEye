@@ -12,12 +12,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionViewController">
             <connections>
+                <outlet property="cameraButton" destination="6DE-35-eh6" id="NDO-09-Tc8"/>
+                <outlet property="findLabel" destination="v8o-aO-1in" id="MII-rw-05n"/>
                 <outlet property="heart1" destination="8wr-oO-Sx2" id="Ec4-9f-0Od"/>
                 <outlet property="heart2" destination="ZiI-s0-tUi" id="DLQ-wd-4QV"/>
                 <outlet property="heart3" destination="Kzl-Jk-iNG" id="fcB-Qy-kfC"/>
                 <outlet property="numberOfAnswersCounter" destination="6Px-fY-Vsa" id="onY-dR-pIt"/>
                 <outlet property="objectToFind" destination="drM-ua-Qmu" id="3mM-u1-Dzt"/>
-                <outlet property="quitButton" destination="2g2-5X-dZx" id="CUH-v5-Od2"/>
+                <outlet property="quitButton" destination="2g2-5X-dZx" id="ZL9-Uc-eWM"/>
+                <outlet property="skipButton" destination="HVd-ts-zxz" id="dxs-IW-tCl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
