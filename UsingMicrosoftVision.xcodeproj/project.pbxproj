@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		006ADCB51E441D080063B6A4 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 006ADCB41E441D080063B6A4 /* Constants.m */; };
+		006ADCB71E4427AA0063B6A4 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 006ADCB61E4427AA0063B6A4 /* Constants.m */; };
 		00EBE3B41E43BFBE00203079 /* eye-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EBE3B31E43BFBE00203079 /* eye-icon.png */; };
 		00EBE3B61E43C29400203079 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EBE3B51E43C29400203079 /* heart.png */; };
 		00EBE3B81E43C43000203079 /* cameraIcon-thumbn-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EBE3B71E43C43000203079 /* cameraIcon-thumbn-on.png */; };
@@ -28,7 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		006ADCB41E441D080063B6A4 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		006ADCB61E4427AA0063B6A4 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		00EBE3B31E43BFBE00203079 /* eye-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye-icon.png"; sourceTree = "<group>"; };
 		00EBE3B51E43C29400203079 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 		00EBE3B71E43C43000203079 /* cameraIcon-thumbn-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraIcon-thumbn-on.png"; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 				9E9CA0BC1E4102C2002489B5 /* AppDelegate.h */,
 				9E9CA0BD1E4102C2002489B5 /* AppDelegate.m */,
 				E87EC67D1E43AF1A002106F1 /* Constants.h */,
-				006ADCB41E441D080063B6A4 /* Constants.m */,
+				006ADCB61E4427AA0063B6A4 /* Constants.m */,
 				9E9CA0BF1E4102C2002489B5 /* ViewController.h */,
 				9E9CA0C01E4102C2002489B5 /* ViewController.m */,
 				E87EC6871E43CA0E002106F1 /* QuestionViewController.h */,
@@ -208,7 +208,7 @@
 				E87EC68A1E43CA0E002106F1 /* QuestionViewController.m in Sources */,
 				9E9CA0BE1E4102C2002489B5 /* AppDelegate.m in Sources */,
 				9E9CA0BB1E4102C2002489B5 /* main.m in Sources */,
-				006ADCB51E441D080063B6A4 /* Constants.m in Sources */,
+				006ADCB71E4427AA0063B6A4 /* Constants.m in Sources */,
 				C3010DDE1E43BC6D0029CB8C /* ConfirmationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
