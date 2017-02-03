@@ -25,6 +25,7 @@
 		C3010DE91E4429750029CB8C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = C3010DE81E4429750029CB8C /* Constants.m */; };
 		E87EC68A1E43CA0E002106F1 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E87EC6881E43CA0E002106F1 /* QuestionViewController.m */; };
 		E87EC68B1E43CA0E002106F1 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87EC6891E43CA0E002106F1 /* QuestionViewController.xib */; };
+		E87EC6911E4401D9002106F1 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = E87EC6901E4401D9002106F1 /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		E87EC6871E43CA0E002106F1 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
 		E87EC6881E43CA0E002106F1 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
 		E87EC6891E43CA0E002106F1 /* QuestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
+		E87EC6901E4401D9002106F1 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
