@@ -46,7 +46,7 @@
     
     self.photo.image = image;
     
-    NSLog(@"WHAT WE GOT BACK: %@", self.dictToParse);
+    //NSLog(@"WHAT WE GOT BACK: %@", self.dictToParse);
     
     [self parseData];
 }
@@ -56,13 +56,9 @@
     
     NSDictionary *description = [self.dictToParse objectForKey:@"description"];
     
-    //NSString *tagString = [description objectForKey:@"tags"];
-    
-    //NSLog(@"TAGS: %@", tagString);
-    
     NSArray *tagArray = [description objectForKey:@"tags"];
     
-    NSLog(@"TAG ARRAY: %@", tagArray);
+    //NSLog(@"TAG ARRAY: %@", tagArray);
     
     for (NSString *item in tagArray) {
         if ([item isEqualToString:self.itemToFind]) {
