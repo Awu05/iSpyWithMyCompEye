@@ -7,6 +7,7 @@
 //
 
 #import "QuestionViewController.h"
+#import "FinalScoreViewController.h"
 
 @interface QuestionViewController ()
 
@@ -182,8 +183,10 @@
         [self.heart2 setHidden:YES];
     } else if (self.numberOfSkips == 1) {
         //push to the "you lose" viewcontroller
-        
-        
+#pragma mark this doesn't work for some reason
+        FinalScoreViewController *fsVC = [[FinalScoreViewController alloc]init];
+        [self presentViewController:fsVC animated:YES completion:nil];
+
         
     }
     
@@ -214,4 +217,10 @@
 }
 
 
+- (IBAction)didPressQuitButton:(id)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+
+    
+}
 @end

@@ -36,6 +36,8 @@
 @property (strong, nonatomic) NSMutableArray *homeFurnishings;
 @property (strong, nonatomic) NSMutableArray *challengeObjects;
 
+@property (weak, nonatomic) IBOutlet UIButton *quitButton;
+- (IBAction)didPressQuitButton:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIImageView *heart1;
 @property (weak, nonatomic) IBOutlet UIImageView *heart2;

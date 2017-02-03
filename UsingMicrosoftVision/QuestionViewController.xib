@@ -15,6 +15,7 @@
                 <outlet property="heart2" destination="ZiI-s0-tUi" id="DLQ-wd-4QV"/>
                 <outlet property="heart3" destination="Kzl-Jk-iNG" id="fcB-Qy-kfC"/>
                 <outlet property="objectToFind" destination="drM-ua-Qmu" id="3mM-u1-Dzt"/>
+                <outlet property="quitButton" destination="2g2-5X-dZx" id="CUH-v5-Od2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -130,6 +131,9 @@
                     <state key="normal" title="Quit">
                         <color key="titleColor" red="0.35045874119999998" green="0.1432072073" blue="0.68293976779999999" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="didPressQuitButton:" destination="-1" eventType="touchUpInside" id="Sjd-e5-XTQ"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

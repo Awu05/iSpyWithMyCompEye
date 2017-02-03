@@ -8,6 +8,8 @@
 
 #import "ConfirmationViewController.h"
 #import "Constants.h"
+#import "QuestionViewController.h"
+#import "FinalScoreViewController.h"
 
 @interface ConfirmationViewController ()
 
@@ -62,17 +64,34 @@
         if ([item isEqualToString:self.itemToFind]) {
             self.didItemMatch = true;
             self.confirmationTextView.text = @"You found it!";
+            self.numberOfCorrectAnswers += 1;
         }
     }
     
     if (self.didItemMatch == false) {
         self.confirmationTextView.text = [NSString stringWithFormat:@"That object was not %@-y enough!", self.itemToFind];
     }
+    
+    self.totalNumberOfAnswers += 1;
 }
 
 
 - (IBAction)didPressNextButton:(id)sender {
-    
+    if (self.totalNumberOfAnswers < 5) {
+        //push to QuestionViewController
+        QuestionViewController *qVC = [[QuestionViewController alloc]init];
+        [self dismissViewControllerAnimated:YES completion:nil];
+
+        
+        
+    } else if (self.totalNumberOfAnswers == 5) {
+        //push to the "final results" viewcontroller
+        FinalScoreViewController *fsVC = [[FinalScoreViewController alloc]init];
+        [self presentViewController:fsVC animated:YES completion:nil];
+        
+        
+        
+    }
     
     
 }
