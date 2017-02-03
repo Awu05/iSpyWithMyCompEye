@@ -87,15 +87,6 @@
         self.item = self.objectToFind.text;
         //NSLog(@"Label Object: %@", self.item);
         
-        if ([self.numberOfAnswersCounter.text intValue] >= 5) {
-            //push to the "final results" viewcontroller
-            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            FinalScoreViewController *myVC = (FinalScoreViewController *)[storyboard instantiateViewControllerWithIdentifier:@"playAgain"];
-            
-            [self presentViewController:myVC animated:YES completion:nil];
-            
-        }
-        
     }
 }
 
