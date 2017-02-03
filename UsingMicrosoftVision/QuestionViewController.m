@@ -40,9 +40,16 @@
         
         
     }
+    
+    self.numberOfAnswers = 0;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    
+    self.numberOfAnswers += 1;
+    NSString *numberOfAnswers = [NSString stringWithFormat:@"%d/5", self.numberOfAnswers];
+    self.numberOfAnswersCounter.text = numberOfAnswers;
+    
     if (self.isOfficeObjects == YES) {
         
         
@@ -92,6 +99,8 @@
         picker.sourceType = UIImagePickerControllerSourceTypeCamera;
         
         self.imagePickerController = picker;
+        
+        self.isSecondTimeAppearing = YES;
         
         [self presentViewController:picker animated:YES completion:NULL];
         
@@ -166,6 +175,8 @@
         
     } else if (self.isChallengeObjects == YES) {
         
+        [self.challengeObjects removeObject:self.objectToFind.text];
+
         
         int i = (int) self.challengeObjects.count;
         self.r = arc4random_uniform(i);

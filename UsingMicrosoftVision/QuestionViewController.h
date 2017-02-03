@@ -46,6 +46,10 @@
 
 @property int r;
 
+@property (weak, nonatomic) IBOutlet UILabel *numberOfAnswersCounter;
+@property int numberOfAnswers;
+
+@property BOOL isSecondTimeAppearing;
 
 
 @end
