@@ -45,7 +45,8 @@
 
 
 - (IBAction)playAgainButtonTapped:(UIButton *)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+//    [self dismissViewControllerAnimated:YES completion:nil];
+    [self performSegueWithIdentifier: @"playAgain" sender: nil];
 }
 
 
