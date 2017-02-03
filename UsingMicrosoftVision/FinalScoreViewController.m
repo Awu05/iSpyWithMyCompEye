@@ -24,18 +24,18 @@
     int number = (int)correctAnswers;
     // give user feedback based on numOfCorrectAnswers
     switch (number) {
-        case 10:
-        case 9:
+
+        case 5:
             feedback = @"Great going";
             break;
-        case 8:
-        case 7:
+        case 4:
             feedback = @"Okay.";
             break;
-        case 6:
-        case 5:
+        case 3:
             feedback = @"Hmm....";
             break;
+        case 2:
+            feedback = @"Try harder";
         default:
             feedback = @"You desperately need to take classes";
             break;
