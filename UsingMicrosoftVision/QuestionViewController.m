@@ -75,7 +75,7 @@
             
             
             int i = (int) self.challengeObjects.count;
-            self.r = arc4random_uniform(i);
+            self.r = arc4random_uniform(i-1);
             
             self.objectToFind.text = [self.challengeObjects objectAtIndex:self.r];
         }
@@ -130,6 +130,20 @@
     self.cVC.totalNumberOfAnswers = self.numberOfAnswers;
     
     self.cVC.imgData = imageData;
+    
+    if (self.isOfficeObjects == YES) {
+        [self.officeObjects removeObject:self.objectToFind.text];
+        NSLog(@"%@", self.officeObjects);
+        
+    } else if (self.isHomeFurnishings == YES) {
+        //home furnishings
+        
+        
+        
+    } else if (self.isChallengeObjects == YES) {
+        [self.challengeObjects removeObject:self.objectToFind.text];
+    }
+    
     [self presentViewController:self.cVC animated:YES completion:nil];
     
 }
@@ -172,7 +186,7 @@
         [self.officeObjects removeObject:self.objectToFind.text];
         
         int i = (int) self.officeObjects.count;
-        self.r = arc4random_uniform(i);
+        self.r = arc4random_uniform(i-1);
         
         self.objectToFind.text = [self.officeObjects objectAtIndex:self.r];
         
@@ -188,7 +202,7 @@
         
         
         int i = (int) self.challengeObjects.count;
-        self.r = arc4random_uniform(i);
+        self.r = arc4random_uniform(i-1);
         
         self.objectToFind.text = [self.challengeObjects objectAtIndex:self.r];
     }
@@ -203,10 +217,6 @@
         [self.heart2 setHidden:YES];
     } else if (self.numberOfSkips == 1) {
         //push to the "you lose" viewcontroller
-#pragma mark this doesn't work for some reason
-//        FinalScoreViewController *fsVC = [[FinalScoreViewController alloc]init];
-//        [self presentViewController:fsVC animated:YES completion:nil];
-        
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         FinalScoreViewController *myVC = (FinalScoreViewController *)[storyboard instantiateViewControllerWithIdentifier:@"playAgain"];
         
