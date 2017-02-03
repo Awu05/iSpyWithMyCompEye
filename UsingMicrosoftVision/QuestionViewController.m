@@ -140,8 +140,9 @@
         
     } else if (self.isHomeFurnishings == YES) {
         //home furnishings
+        [self.homeFurnishings removeObject:self.objectToFind.text];
         
-        
+        NSLog(@"%@", self.homeFurnishings);
         
     } else if (self.isChallengeObjects == YES) {
         [self.challengeObjects removeObject:self.objectToFind.text];
