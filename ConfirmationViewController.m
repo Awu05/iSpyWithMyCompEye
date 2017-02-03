@@ -27,13 +27,16 @@
         [self dataReceived:note];
     }];
     
-    //[[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"numberOfCorrectAnswers"];
+
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     NSString *string = [NSString stringWithFormat:@"%ld/5",(long)self.totalNumberOfAnswers];
     self.numberOfAnswersLabel.text = string;
     self.alreadyRan = NO;
+
+    
+    [self.activityIndicator startAnimating];
     
 }
 
@@ -45,7 +48,8 @@
     self.photo.image = image;
     
     //NSLog(@"WHAT WE GOT BACK: %@", self.dictToParse);
-    
+    [self.activityIndicator stopAnimating];
+    self.activityIndicator.hidden = YES;
     [self parseData];
 }
 
@@ -55,18 +59,12 @@
     NSDictionary *description = [self.dictToParse objectForKey:@"description"];
     
     NSArray *tagArray = [description objectForKey:@"tags"];
-    
-    //NSLog(@"TAG ARRAY: %@", tagArray);
-    
+        
     for (NSString *item in tagArray) {
         if ([item isEqualToString:self.itemToFind]) {
             self.didItemMatch = true;
             self.confirmationTextView.text = @"\nYou found it!";
-            //            self.numberOfCorrectAnswers += 1;
-            //            self.totalNumberOfAnswers += 1;
-            
-            //            [[NSUserDefaults standardUserDefaults] setInteger:self.numberOfCorrectAnswers forKey:@"numberOfCorrectAnswers"];
-            
+
         }
     }
     
@@ -106,5 +104,7 @@
     
     
 }
+
+
 
 @end

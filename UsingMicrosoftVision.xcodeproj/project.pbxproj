@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		006ADCBB1E44E0870063B6A4 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 006ADCBA1E44E0870063B6A4 /* Constants.m */; };
+		006ADCBD1E44E1740063B6A4 /* iSpyLogo-shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 006ADCBC1E44E1740063B6A4 /* iSpyLogo-shadow.png */; };
 		00EBE3B41E43BFBE00203079 /* eye-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EBE3B31E43BFBE00203079 /* eye-icon.png */; };
 		00EBE3B61E43C29400203079 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EBE3B51E43C29400203079 /* heart.png */; };
 		00EBE3B81E43C43000203079 /* cameraIcon-thumbn-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EBE3B71E43C43000203079 /* cameraIcon-thumbn-on.png */; };
@@ -24,10 +26,11 @@
 		C3010DDF1E43BC6D0029CB8C /* ConfirmationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3010DDD1E43BC6D0029CB8C /* ConfirmationViewController.xib */; };
 		E87EC68A1E43CA0E002106F1 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E87EC6881E43CA0E002106F1 /* QuestionViewController.m */; };
 		E87EC68B1E43CA0E002106F1 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87EC6891E43CA0E002106F1 /* QuestionViewController.xib */; };
-		E896CB311E44583900D7A09F /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = E896CB301E44583900D7A09F /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		006ADCBA1E44E0870063B6A4 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		006ADCBC1E44E1740063B6A4 /* iSpyLogo-shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iSpyLogo-shadow.png"; sourceTree = "<group>"; };
 		00EBE3B31E43BFBE00203079 /* eye-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye-icon.png"; sourceTree = "<group>"; };
 		00EBE3B51E43C29400203079 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 		00EBE3B71E43C43000203079 /* cameraIcon-thumbn-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraIcon-thumbn-on.png"; sourceTree = "<group>"; };
@@ -53,7 +56,6 @@
 		E87EC6871E43CA0E002106F1 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
 		E87EC6881E43CA0E002106F1 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
 		E87EC6891E43CA0E002106F1 /* QuestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
-		E896CB301E44583900D7A09F /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +94,7 @@
 				9E9CA0BC1E4102C2002489B5 /* AppDelegate.h */,
 				9E9CA0BD1E4102C2002489B5 /* AppDelegate.m */,
 				E87EC67D1E43AF1A002106F1 /* Constants.h */,
-				E896CB301E44583900D7A09F /* Constants.m */,
+				006ADCBA1E44E0870063B6A4 /* Constants.m */,
 				9E9CA0BF1E4102C2002489B5 /* ViewController.h */,
 				9E9CA0C01E4102C2002489B5 /* ViewController.m */,
 				E87EC6871E43CA0E002106F1 /* QuestionViewController.h */,
@@ -106,6 +108,7 @@
 				9E9CA0C71E4102C2002489B5 /* LaunchScreen.storyboard */,
 				9E9CA0CA1E4102C2002489B5 /* Info.plist */,
 				00EBE3C71E43E40000203079 /* iSpyLogo.png */,
+				006ADCBC1E44E1740063B6A4 /* iSpyLogo-shadow.png */,
 				00EBE3C11E43D8EB00203079 /* ispy-bkg2.png */,
 				00EBE3B31E43BFBE00203079 /* eye-icon.png */,
 				00EBE3B71E43C43000203079 /* cameraIcon-thumbn-on.png */,
@@ -154,7 +157,7 @@
 				TargetAttributes = {
 					9E9CA0B51E4102C2002489B5 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = R52DFB482J;
+						DevelopmentTeam = 8QX9P5R3WZ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -185,6 +188,7 @@
 				00EBE3B41E43BFBE00203079 /* eye-icon.png in Resources */,
 				9E9CA0C91E4102C2002489B5 /* LaunchScreen.storyboard in Resources */,
 				E87EC68B1E43CA0E002106F1 /* QuestionViewController.xib in Resources */,
+				006ADCBD1E44E1740063B6A4 /* iSpyLogo-shadow.png in Resources */,
 				00EBE3B81E43C43000203079 /* cameraIcon-thumbn-on.png in Resources */,
 				00EBE3C81E43E40000203079 /* iSpyLogo.png in Resources */,
 				00EBE3B61E43C29400203079 /* heart.png in Resources */,
@@ -208,7 +212,7 @@
 				E87EC68A1E43CA0E002106F1 /* QuestionViewController.m in Sources */,
 				9E9CA0BE1E4102C2002489B5 /* AppDelegate.m in Sources */,
 				9E9CA0BB1E4102C2002489B5 /* main.m in Sources */,
-				E896CB311E44583900D7A09F /* Constants.m in Sources */,
+				006ADCBB1E44E0870063B6A4 /* Constants.m in Sources */,
 				C3010DDE1E43BC6D0029CB8C /* ConfirmationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,10 +333,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = R52DFB482J;
+				DEVELOPMENT_TEAM = 8QX9P5R3WZ;
 				INFOPLIST_FILE = UsingMicrosoftVision/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wu.andy.reah;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clark.emi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -341,10 +345,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = R52DFB482J;
+				DEVELOPMENT_TEAM = 8QX9P5R3WZ;
 				INFOPLIST_FILE = UsingMicrosoftVision/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wu.andy.reah;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clark.emi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
