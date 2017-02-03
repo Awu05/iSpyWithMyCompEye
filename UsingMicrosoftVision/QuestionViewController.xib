@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -74,12 +74,6 @@
                         <constraint firstAttribute="height" constant="40" id="V2C-Yp-KnB"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20sec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpW-Yo-iNO">
-                    <rect key="frame" x="165" y="30" width="44" height="18"/>
-                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8o-aO-1in">
                     <rect key="frame" x="140" y="168" width="95" height="60"/>
                     <fontDescription key="fontDescription" type="system" pointSize="50"/>
@@ -144,11 +138,9 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Kzl-Jk-iNG" secondAttribute="trailing" constant="16" id="0Oc-N9-vVb"/>
                 <constraint firstItem="JcT-Fu-8hu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0UH-Ru-Lqm"/>
-                <constraint firstItem="jpW-Yo-iNO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="2DQ-06-sIn"/>
                 <constraint firstItem="6DE-35-eh6" firstAttribute="top" secondItem="drM-ua-Qmu" secondAttribute="bottom" constant="50" id="7jx-vk-1PV"/>
                 <constraint firstItem="Kzl-Jk-iNG" firstAttribute="leading" secondItem="8wr-oO-Sx2" secondAttribute="trailing" constant="32" id="8Yy-Mj-TBj"/>
                 <constraint firstAttribute="trailing" secondItem="ZiI-s0-tUi" secondAttribute="trailing" constant="52" id="CkO-fj-EMd"/>
-                <constraint firstItem="jpW-Yo-iNO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MXR-7H-syR"/>
                 <constraint firstItem="drM-ua-Qmu" firstAttribute="top" secondItem="v8o-aO-1in" secondAttribute="bottom" constant="31" id="OYb-uE-FI8"/>
                 <constraint firstItem="HVd-ts-zxz" firstAttribute="top" secondItem="drM-ua-Qmu" secondAttribute="bottom" constant="50" id="SrN-3b-m9Z"/>
                 <constraint firstItem="v8o-aO-1in" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UaB-WJ-Q4c"/>

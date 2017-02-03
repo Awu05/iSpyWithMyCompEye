@@ -29,12 +29,14 @@
         [self dataReceived:note];
     }];
     
+    //[[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"numberOfCorrectAnswers"];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     NSString *string = [NSString stringWithFormat:@"%ld/5",(long)self.totalNumberOfAnswers];
     self.numberOfAnswersLabel.text = string;
     self.alreadyRan = NO;
+    
 }
 
 
@@ -66,20 +68,21 @@
         if ([item isEqualToString:self.itemToFind]) {
             self.didItemMatch = true;
             self.confirmationTextView.text = @"\nYou found it!";
-//            self.numberOfCorrectAnswers += 1;
-//            self.totalNumberOfAnswers += 1;
+            //            self.numberOfCorrectAnswers += 1;
+            //            self.totalNumberOfAnswers += 1;
             
-//            [[NSUserDefaults standardUserDefaults] setInteger:self.numberOfCorrectAnswers forKey:@"numberOfCorrectAnswers"];
-
+            //            [[NSUserDefaults standardUserDefaults] setInteger:self.numberOfCorrectAnswers forKey:@"numberOfCorrectAnswers"];
+            
         }
     }
     
     if (self.didItemMatch == false) {
         self.confirmationTextView.text = [NSString stringWithFormat:@"\nThat object was not %@-y enough!", self.itemToFind];
-//        self.totalNumberOfAnswers += 1;
+        //        self.totalNumberOfAnswers += 1;
     } else if (self.didItemMatch == true) {
         
         if (self.alreadyRan == NO) {
+            self.numberOfCorrectAnswers = [[NSUserDefaults standardUserDefaults] integerForKey:@"numberOfCorrectAnswers"];
             self.numberOfCorrectAnswers += 1;
             
             [[NSUserDefaults standardUserDefaults] setInteger:self.numberOfCorrectAnswers forKey:@"numberOfCorrectAnswers"];

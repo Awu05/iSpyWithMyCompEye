@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -60,18 +60,11 @@
                                 <constraint firstAttribute="height" constant="40" id="eMq-9s-f9y"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 sec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bt-y0-ZYv">
-                            <rect key="frame" x="157" y="25.5" width="62.5" height="24"/>
-                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                     </subviews>
                     <color key="backgroundColor" red="0.4206871036" green="0.68989698519999998" blue="0.74717881939999997" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="xj9-7J-Wa4" firstAttribute="top" secondItem="AIO-O6-3vN" secondAttribute="top" constant="17" id="0fM-MB-Bvt"/>
                         <constraint firstAttribute="trailing" secondItem="UdJ-40-L1b" secondAttribute="trailing" constant="16" id="6DI-0N-IBn"/>
-                        <constraint firstItem="4bt-y0-ZYv" firstAttribute="centerY" secondItem="AIO-O6-3vN" secondAttribute="centerY" id="AeQ-gA-RGB"/>
                         <constraint firstItem="cwp-4y-7xM" firstAttribute="leading" secondItem="AIO-O6-3vN" secondAttribute="leading" constant="20" id="AnP-0f-Dp8"/>
                         <constraint firstAttribute="width" secondItem="AIO-O6-3vN" secondAttribute="height" multiplier="375:82" constant="32.012195121951208" id="JJA-Gn-2eq"/>
                         <constraint firstItem="UdJ-40-L1b" firstAttribute="top" secondItem="AIO-O6-3vN" secondAttribute="top" constant="17" id="P6U-t1-qdw"/>
@@ -80,7 +73,6 @@
                         <constraint firstItem="UdJ-40-L1b" firstAttribute="leading" secondItem="xj9-7J-Wa4" secondAttribute="trailing" constant="32" id="pyG-AV-Z6b"/>
                         <constraint firstItem="P2w-vW-33g" firstAttribute="top" secondItem="AIO-O6-3vN" secondAttribute="top" constant="17" id="rnl-Ae-0DL"/>
                         <constraint firstItem="cwp-4y-7xM" firstAttribute="top" secondItem="AIO-O6-3vN" secondAttribute="top" constant="25" id="sdm-Ak-CEV"/>
-                        <constraint firstItem="4bt-y0-ZYv" firstAttribute="centerX" secondItem="AIO-O6-3vN" secondAttribute="centerX" id="uBn-hZ-diC"/>
                     </constraints>
                 </view>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.65000000000000002" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="btK-bB-qrV">
