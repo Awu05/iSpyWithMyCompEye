@@ -21,8 +21,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dataReceived:) name:@"downloadDataComplete" object:nil];
-    
     self.didItemMatch = false;
     
     [[NSNotificationCenter defaultCenter] addObserverForName:@"downloadDataComplete" object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note){
@@ -41,7 +39,7 @@
 
 
 - (void)dataReceived:(NSNotification *)note {
-    NSLog(@"Received Notification - Data Has Arrived!");
+    //NSLog(@"Received Notification - Data Has Arrived!");
     UIImage *image = [UIImage imageWithData:self.imgData];
     
     self.photo.image = image;

@@ -47,6 +47,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     
+    
     if (self.isSecondTimeAppearing == YES) {
         //do nothing
         self.isSecondTimeAppearing = NO;
@@ -84,7 +85,17 @@
         }
         
         self.item = self.objectToFind.text;
-        NSLog(@"Label Object: %@", self.item);
+        //NSLog(@"Label Object: %@", self.item);
+        
+        if ([self.numberOfAnswersCounter.text intValue] >= 5) {
+            //push to the "final results" viewcontroller
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            FinalScoreViewController *myVC = (FinalScoreViewController *)[storyboard instantiateViewControllerWithIdentifier:@"playAgain"];
+            
+            [self presentViewController:myVC animated:YES completion:nil];
+            
+        }
+        
     }
 }
 
@@ -136,13 +147,13 @@
     
     if (self.isOfficeObjects == YES) {
         [self.officeObjects removeObject:self.objectToFind.text];
-        NSLog(@"%@", self.officeObjects);
+        //NSLog(@"%@", self.officeObjects);
         
     } else if (self.isHomeFurnishings == YES) {
         //home furnishings
         [self.homeFurnishings removeObject:self.objectToFind.text];
         
-        NSLog(@"%@", self.homeFurnishings);
+        //NSLog(@"%@", self.homeFurnishings);
         
     } else if (self.isChallengeObjects == YES) {
         [self.challengeObjects removeObject:self.objectToFind.text];
@@ -172,7 +183,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             self.cVC.dictToParse = jsonDictionary;
             
-            NSLog(@"OBJ TO FIND: %@", self.cVC.itemToFind);
+            //NSLog(@"OBJ TO FIND: %@", self.cVC.itemToFind);
             
             [[NSNotificationCenter defaultCenter] postNotificationName:@"downloadDataComplete" object:nil];
         });
@@ -200,7 +211,7 @@
         [self.homeFurnishings removeObject:self.objectToFind.text];
 
         int i = (int) self.homeFurnishings.count;
-        self.r = arc4random_uniform(i);
+        self.r = arc4random_uniform(i-1);
         
         self.objectToFind.text = [self.homeFurnishings objectAtIndex:self.r];
         
@@ -218,7 +229,7 @@
     }
     
     self.item = self.objectToFind.text;
-    NSLog(@"Label Object: %@", self.item);
+    //NSLog(@"Label Object: %@", self.item);
     
     if (self.numberOfSkips == 3) {
         [self.heart1 setHidden:YES];

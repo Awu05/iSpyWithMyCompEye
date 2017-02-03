@@ -20,8 +20,12 @@
     self.confirmationVC = [[ConfirmationViewController alloc] init];
     NSString  *feedback;
     
-    NSString *correctAnswers = [[NSUserDefaults standardUserDefaults]valueForKey:@"numberOfCorrectAnswers"];
-    int number = (int)correctAnswers;
+    NSString *correctAnswers = [[NSUserDefaults standardUserDefaults] valueForKey:@"numberOfCorrectAnswers"];
+    
+    //NSLog(@"Correct Ans: %@", correctAnswers);
+    
+    int number = [correctAnswers intValue];
+    
     // give user feedback based on numOfCorrectAnswers
     switch (number) {
 
