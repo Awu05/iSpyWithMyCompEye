@@ -15,6 +15,9 @@
                 <outlet property="activityIndicator" destination="Coy-Od-Zls" id="cRd-1G-EIt"/>
                 <outlet property="confirmationTextView" destination="btK-bB-qrV" id="Y0L-w3-3PG"/>
                 <outlet property="currentObject" destination="cwp-4y-7xM" id="9lo-5n-7Fj"/>
+                <outlet property="heart1" destination="xj9-7J-Wa4" id="Bqq-nj-hDA"/>
+                <outlet property="heart2" destination="P2w-vW-33g" id="6sc-Cx-HLH"/>
+                <outlet property="heart3" destination="UdJ-40-L1b" id="tsd-W9-4xh"/>
                 <outlet property="nextObject" destination="AFH-Lm-cQ2" id="gux-14-5hW"/>
                 <outlet property="numberOfAnswersLabel" destination="cwp-4y-7xM" id="DRS-Iy-dgH"/>
                 <outlet property="photo" destination="Gd2-6e-Q6m" id="FBS-RO-GhD"/>

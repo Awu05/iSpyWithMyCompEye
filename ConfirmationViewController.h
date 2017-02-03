@@ -33,6 +33,11 @@
 
 @property (retain, nonatomic) NSString *itemToFind;
 
+@property (weak, nonatomic) IBOutlet UIImageView *heart1;
+@property (weak, nonatomic) IBOutlet UIImageView *heart2;
+@property (weak, nonatomic) IBOutlet UIImageView *heart3;
+
+
 
 @property BOOL didItemMatch;
 @property BOOL alreadyRan;

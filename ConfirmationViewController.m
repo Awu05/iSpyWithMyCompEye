@@ -34,7 +34,12 @@
     NSString *string = [NSString stringWithFormat:@"%ld/5",(long)self.totalNumberOfAnswers];
     self.numberOfAnswersLabel.text = string;
     self.alreadyRan = NO;
-
+    
+    //hide hearts for now
+    self.heart1.hidden = YES;
+    self.heart2.hidden = YES;
+    self.heart3.hidden = YES;
+    
     
     [self.activityIndicator startAnimating];
     
