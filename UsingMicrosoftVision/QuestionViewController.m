@@ -30,13 +30,13 @@
         self.officeObjects = [[NSMutableArray alloc]initWithObjects:@"stapler", @"laptop", @"writing implement", @"cup", @"keyboard", @"scissors", @"chair", @"suit", @"cellphone", @"book", nil];
         
     } else if (self.isHomeFurnishings == YES) {
-        //home furnishings
         
+        self.homeFurnishings = [[NSMutableArray alloc]initWithObjects:@"chair", @"bed", @"table", @"book", @"plant", @"orange", @"bread", @"cup", @"sofa", @"pillow", nil];
         
         
     } else if (self.isChallengeObjects == YES) {
         
-        self.challengeObjects = [[NSMutableArray alloc]initWithObjects:@"flying", @"holding", @"wooden", @"green", @"yellow", nil];
+        self.challengeObjects = [[NSMutableArray alloc]initWithObjects:@"flying", @"holding", @"wooden", @"green", @"yellow", @"stacked", @"silver", @"leather", @"beautiful", @"water", nil];
         
         
     }
@@ -48,7 +48,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     
     if (self.isSecondTimeAppearing == YES) {
-        //hide everything
+        //do nothing
         self.isSecondTimeAppearing = NO;
     } else if (self.isSecondTimeAppearing == NO) {
         
@@ -57,7 +57,6 @@
         self.numberOfAnswersCounter.text = numberOfAnswers;
         
         if (self.isOfficeObjects == YES) {
-            
             
             
             int i = (int) self.officeObjects.count;
@@ -178,7 +177,13 @@
         
         
     } else if (self.isHomeFurnishings == YES) {
-        //home furnishings
+        
+        [self.homeFurnishings removeObject:self.objectToFind.text];
+
+        int i = (int) self.homeFurnishings.count;
+        self.r = arc4random_uniform(i);
+        
+        self.objectToFind.text = [self.homeFurnishings objectAtIndex:self.r];
         
         
         
