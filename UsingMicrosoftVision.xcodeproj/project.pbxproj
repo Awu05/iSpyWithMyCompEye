@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		006ADCB31E440CD70063B6A4 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 006ADCB21E440CD70063B6A4 /* Constants.m */; };
 		00EBE3B41E43BFBE00203079 /* eye-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EBE3B31E43BFBE00203079 /* eye-icon.png */; };
 		00EBE3B61E43C29400203079 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EBE3B51E43C29400203079 /* heart.png */; };
 		00EBE3B81E43C43000203079 /* cameraIcon-thumbn-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EBE3B71E43C43000203079 /* cameraIcon-thumbn-on.png */; };
@@ -23,12 +22,12 @@
 		9E9CA0C91E4102C2002489B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9CA0C71E4102C2002489B5 /* LaunchScreen.storyboard */; };
 		C3010DDE1E43BC6D0029CB8C /* ConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3010DDC1E43BC6D0029CB8C /* ConfirmationViewController.m */; };
 		C3010DDF1E43BC6D0029CB8C /* ConfirmationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3010DDD1E43BC6D0029CB8C /* ConfirmationViewController.xib */; };
+		C3010DE71E441C480029CB8C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = C3010DE61E441C480029CB8C /* Constants.m */; };
 		E87EC68A1E43CA0E002106F1 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E87EC6881E43CA0E002106F1 /* QuestionViewController.m */; };
 		E87EC68B1E43CA0E002106F1 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87EC6891E43CA0E002106F1 /* QuestionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		006ADCB21E440CD70063B6A4 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		00EBE3B31E43BFBE00203079 /* eye-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye-icon.png"; sourceTree = "<group>"; };
 		00EBE3B51E43C29400203079 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 		00EBE3B71E43C43000203079 /* cameraIcon-thumbn-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraIcon-thumbn-on.png"; sourceTree = "<group>"; };
@@ -50,6 +49,7 @@
 		C3010DDB1E43BC6D0029CB8C /* ConfirmationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmationViewController.h; sourceTree = "<group>"; };
 		C3010DDC1E43BC6D0029CB8C /* ConfirmationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmationViewController.m; sourceTree = "<group>"; };
 		C3010DDD1E43BC6D0029CB8C /* ConfirmationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmationViewController.xib; sourceTree = "<group>"; };
+		C3010DE61E441C480029CB8C /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = ../../../../Desktop/Constants.m; sourceTree = "<group>"; };
 		E87EC67D1E43AF1A002106F1 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		E87EC6871E43CA0E002106F1 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
 		E87EC6881E43CA0E002106F1 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 				9E9CA0BC1E4102C2002489B5 /* AppDelegate.h */,
 				9E9CA0BD1E4102C2002489B5 /* AppDelegate.m */,
 				E87EC67D1E43AF1A002106F1 /* Constants.h */,
-				006ADCB21E440CD70063B6A4 /* Constants.m */,
+				C3010DE61E441C480029CB8C /* Constants.m */,
 				9E9CA0BF1E4102C2002489B5 /* ViewController.h */,
 				9E9CA0C01E4102C2002489B5 /* ViewController.m */,
 				E87EC6871E43CA0E002106F1 /* QuestionViewController.h */,
@@ -206,9 +206,9 @@
 				9E9CA0C11E4102C2002489B5 /* ViewController.m in Sources */,
 				00EBE3CD1E43F96F00203079 /* FinalScoreViewController.m in Sources */,
 				E87EC68A1E43CA0E002106F1 /* QuestionViewController.m in Sources */,
+				C3010DE71E441C480029CB8C /* Constants.m in Sources */,
 				9E9CA0BE1E4102C2002489B5 /* AppDelegate.m in Sources */,
 				9E9CA0BB1E4102C2002489B5 /* main.m in Sources */,
-				006ADCB31E440CD70063B6A4 /* Constants.m in Sources */,
 				C3010DDE1E43BC6D0029CB8C /* ConfirmationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
