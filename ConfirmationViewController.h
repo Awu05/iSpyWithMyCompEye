@@ -32,7 +32,7 @@
 @property (retain, nonatomic) NSDictionary *dictToParse;
 
 @property (retain, nonatomic) NSString *itemToFind;
-@property (weak, nonatomic) IBOutlet UILabel *numberOfAnswersLabel;
+
 
 @property BOOL didItemMatch;
 @property int  numberOfCorrectAnswers;
