@@ -78,7 +78,7 @@
     } else if (self.didItemMatch == true) {
         
         if (self.alreadyRan == NO) {
-            self.numberOfCorrectAnswers = [[NSUserDefaults standardUserDefaults] integerForKey:@"numberOfCorrectAnswers"];
+            self.numberOfCorrectAnswers = (int) [[NSUserDefaults standardUserDefaults] integerForKey:@"numberOfCorrectAnswers"];
             self.numberOfCorrectAnswers += 1;
             
             [[NSUserDefaults standardUserDefaults] setInteger:self.numberOfCorrectAnswers forKey:@"numberOfCorrectAnswers"];
