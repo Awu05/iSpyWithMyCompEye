@@ -42,7 +42,7 @@
     }
     
     // display final score and feedback to user
-    self.finalScoreLabel.text = [NSString stringWithFormat:@"\n\nYou got %d out of %d.\n\n%@",self.confirmationVC.numberOfCorrectAnswers, self.confirmationVC.totalNumberOfAnswers, feedback ];
+    self.finalScoreLabel.text = [NSString stringWithFormat:@"\n\nYou got %d out of 5.\n\n%@",self.confirmationVC.numberOfCorrectAnswers, feedback ];
 }
 
 
