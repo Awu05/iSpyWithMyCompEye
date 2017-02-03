@@ -35,6 +35,7 @@
 
 
 @property BOOL didItemMatch;
+@property BOOL alreadyRan;
 @property int  numberOfCorrectAnswers;
 @property int totalNumberOfAnswers;
 

@@ -16,6 +16,10 @@
 
 @implementation ViewController
 
+//-(void)viewWillAppear:(BOOL)animated {
+//               [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"numberOfCorrectAnswers"];
+//}
+
 
 - (IBAction)pickImage:(id)sender {
     /*

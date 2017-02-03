@@ -42,13 +42,14 @@
     }
     
     // display final score and feedback to user
-    self.finalScoreLabel.text = [NSString stringWithFormat:@"\n\nYou got %d out of 5.\n\n%@",self.confirmationVC.numberOfCorrectAnswers, feedback ];
+    self.finalScoreLabel.text = [NSString stringWithFormat:@"\n\nYou got %d out of 5.\n\n%@",number, feedback ];
 }
 
 
 - (IBAction)playAgainButtonTapped:(UIButton *)sender {
 //    [self dismissViewControllerAnimated:YES completion:nil];
     [self performSegueWithIdentifier: @"playAgain" sender: nil];
+    
 }
 
 
