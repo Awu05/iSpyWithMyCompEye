@@ -32,6 +32,6 @@
 @property (retain, nonatomic) NSString *itemToFind;
 
 @property BOOL didItemMatch;
-@property int numOfCorrectAnswers;
+@property int numberOfCorrectAnswers;
 @property int totalNumberOfAnswers;
 @end

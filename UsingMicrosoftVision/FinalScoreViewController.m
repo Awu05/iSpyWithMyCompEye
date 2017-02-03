@@ -21,7 +21,7 @@
     NSString  *feedback;
     
     // give user feedback based on numOfCorrectAnswers
-    switch (self.confirmationVC.numOfCorrectAnswers) {
+    switch (self.confirmationVC.numberOfCorrectAnswers) {
         case 10:
         case 9:
             feedback = @"Great going";
@@ -40,7 +40,7 @@
     }
     
     // display final score and feedback to user
-    self.finalScoreLabel.text = [NSString stringWithFormat:@"\n\nYou got %d out of %d.\n\n%@",self.confirmationVC.numOfCorrectAnswers, self.confirmationVC.totalNumberOfAnswers, feedback ];
+    self.finalScoreLabel.text = [NSString stringWithFormat:@"\n\nYou got %d out of %d.\n\n%@",self.confirmationVC.numberOfCorrectAnswers, self.confirmationVC.totalNumberOfAnswers, feedback ];
 }
 
 

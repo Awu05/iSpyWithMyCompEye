@@ -60,14 +60,14 @@
     for (NSString *item in tagArray) {
         if ([item isEqualToString:self.itemToFind]) {
             self.didItemMatch = true;
-            self.confirmationTextView.text = @"You found it!";
+            self.confirmationTextView.text = @"\nYou found it!";
             self.numberOfCorrectAnswers += 1;
 //            self.totalNumberOfAnswers += 1;
         }
     }
     
     if (self.didItemMatch == false) {
-        self.confirmationTextView.text = [NSString stringWithFormat:@"That object was not %@-y enough!", self.itemToFind];
+        self.confirmationTextView.text = [NSString stringWithFormat:@"\nThat object was not %@-y enough!", self.itemToFind];
         self.totalNumberOfAnswers += 1;
     }
     
