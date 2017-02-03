@@ -15,6 +15,7 @@
 //The object the user just tried to take a picture of
 @property (weak, nonatomic) IBOutlet UILabel *currentObject;
 
+
 //The photo the user just took
 @property (weak, nonatomic) IBOutlet UIImageView *photo;
 
