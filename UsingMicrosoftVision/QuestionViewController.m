@@ -66,8 +66,12 @@
             
             
         } else if (self.isHomeFurnishings == YES) {
-            //home furnishings
             
+            int i = (int) self.homeFurnishings.count;
+            self.r = arc4random_uniform(i-1);
+            
+            self.objectToFind.text = [self.homeFurnishings objectAtIndex:self.r];
+
             
             
         } else if (self.isChallengeObjects == YES) {
