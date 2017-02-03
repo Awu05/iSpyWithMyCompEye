@@ -19,6 +19,8 @@
 
 
 - (IBAction)officeSupplyBtn:(UIButton *)sender;
+- (IBAction)homeFurnishingsBtn:(id)sender;
+- (IBAction)challengeBtn:(id)sender;
 
 
 

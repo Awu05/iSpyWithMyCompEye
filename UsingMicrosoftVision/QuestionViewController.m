@@ -7,6 +7,7 @@
 //
 
 #import "QuestionViewController.h"
+#import "FinalScoreViewController.h"
 
 @interface QuestionViewController ()
 
@@ -39,9 +40,16 @@
         
         
     }
+    
+    self.numberOfAnswers = 0;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    
+    self.numberOfAnswers += 1;
+    NSString *numberOfAnswers = [NSString stringWithFormat:@"%d/5", self.numberOfAnswers];
+    self.numberOfAnswersCounter.text = numberOfAnswers;
+    
     if (self.isOfficeObjects == YES) {
         
         
@@ -91,6 +99,8 @@
         picker.sourceType = UIImagePickerControllerSourceTypeCamera;
         
         self.imagePickerController = picker;
+        
+        self.isSecondTimeAppearing = YES;
         
         [self presentViewController:picker animated:YES completion:NULL];
         
@@ -165,6 +175,8 @@
         
     } else if (self.isChallengeObjects == YES) {
         
+        [self.challengeObjects removeObject:self.objectToFind.text];
+
         
         int i = (int) self.challengeObjects.count;
         self.r = arc4random_uniform(i);
@@ -182,8 +194,10 @@
         [self.heart2 setHidden:YES];
     } else if (self.numberOfSkips == 1) {
         //push to the "you lose" viewcontroller
-        
-        
+#pragma mark this doesn't work for some reason
+        FinalScoreViewController *fsVC = [[FinalScoreViewController alloc]init];
+        [self presentViewController:fsVC animated:YES completion:nil];
+
         
     }
     
@@ -214,4 +228,10 @@
 }
 
 
+- (IBAction)didPressQuitButton:(id)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+
+    
+}
 @end

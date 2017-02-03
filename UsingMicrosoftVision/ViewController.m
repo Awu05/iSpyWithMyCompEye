@@ -97,4 +97,22 @@
 
 }
 
+- (IBAction)homeFurnishingsBtn:(id)sender {
+    QuestionViewController *qVC = [[QuestionViewController alloc]
+                                   initWithNibName:@"QuestionViewController" bundle:nil];
+    qVC.isHomeFurnishings = YES;
+    
+    [self presentViewController:qVC animated:YES completion:nil];
+
+}
+
+- (IBAction)challengeBtn:(id)sender {
+    QuestionViewController *qVC = [[QuestionViewController alloc]
+                                   initWithNibName:@"QuestionViewController" bundle:nil];
+    qVC.isChallengeObjects = YES;
+    
+    [self presentViewController:qVC animated:YES completion:nil];
+
+}
+
 @end
