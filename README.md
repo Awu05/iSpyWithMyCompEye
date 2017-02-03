@@ -18,10 +18,10 @@ Once you have the API Key, you then need to clone our Repo and create a Constant
 
 You may delete the current Constants.h and paste this inside:
 
-Constants.h:
+Constants.h: 
 extern NSString *const myKey;
 
-Constants.m
+Constants.m: 
 NSString *const myKey = @"API KEY HERE";
               
 You then need to replace "API KEY HERE" with the API Key you got from Microsoft.
