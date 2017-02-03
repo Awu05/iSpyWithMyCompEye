@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		006ADCB91E44280E0063B6A4 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 006ADCB81E44280E0063B6A4 /* Constants.m */; };
 		00EBE3B41E43BFBE00203079 /* eye-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EBE3B31E43BFBE00203079 /* eye-icon.png */; };
 		00EBE3B61E43C29400203079 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EBE3B51E43C29400203079 /* heart.png */; };
 		00EBE3B81E43C43000203079 /* cameraIcon-thumbn-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EBE3B71E43C43000203079 /* cameraIcon-thumbn-on.png */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		006ADCB81E44280E0063B6A4 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		00EBE3B31E43BFBE00203079 /* eye-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye-icon.png"; sourceTree = "<group>"; };
 		00EBE3B51E43C29400203079 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 		00EBE3B71E43C43000203079 /* cameraIcon-thumbn-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraIcon-thumbn-on.png"; sourceTree = "<group>"; };
@@ -92,7 +94,7 @@
 				9E9CA0BC1E4102C2002489B5 /* AppDelegate.h */,
 				9E9CA0BD1E4102C2002489B5 /* AppDelegate.m */,
 				E87EC67D1E43AF1A002106F1 /* Constants.h */,
-				E87EC6901E4401D9002106F1 /* Constants.m */,
+				006ADCB81E44280E0063B6A4 /* Constants.m */,
 				9E9CA0BF1E4102C2002489B5 /* ViewController.h */,
 				9E9CA0C01E4102C2002489B5 /* ViewController.m */,
 				E87EC6871E43CA0E002106F1 /* QuestionViewController.h */,
@@ -102,11 +104,11 @@
 				00EBE3CB1E43F96F00203079 /* FinalScoreViewController.h */,
 				00EBE3CC1E43F96F00203079 /* FinalScoreViewController.m */,
 				00EBE3C51E43DD4600203079 /* wildtextures-creased-black-paper-texture.jpg */,
-				00EBE3C11E43D8EB00203079 /* ispy-bkg2.png */,
-				00EBE3C71E43E40000203079 /* iSpyLogo.png */,
 				9E9CA0C51E4102C2002489B5 /* Assets.xcassets */,
 				9E9CA0C71E4102C2002489B5 /* LaunchScreen.storyboard */,
 				9E9CA0CA1E4102C2002489B5 /* Info.plist */,
+				00EBE3C71E43E40000203079 /* iSpyLogo.png */,
+				00EBE3C11E43D8EB00203079 /* ispy-bkg2.png */,
 				00EBE3B31E43BFBE00203079 /* eye-icon.png */,
 				00EBE3B71E43C43000203079 /* cameraIcon-thumbn-on.png */,
 				00EBE3B51E43C29400203079 /* heart.png */,
@@ -154,7 +156,7 @@
 				TargetAttributes = {
 					9E9CA0B51E4102C2002489B5 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = JJQX5AR27M;
+						DevelopmentTeam = X9KW2SQ39Q;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -208,7 +210,7 @@
 				E87EC68A1E43CA0E002106F1 /* QuestionViewController.m in Sources */,
 				9E9CA0BE1E4102C2002489B5 /* AppDelegate.m in Sources */,
 				9E9CA0BB1E4102C2002489B5 /* main.m in Sources */,
-				E87EC6911E4401D9002106F1 /* Constants.m in Sources */,
+				006ADCB91E44280E0063B6A4 /* Constants.m in Sources */,
 				C3010DDE1E43BC6D0029CB8C /* ConfirmationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,10 +331,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JJQX5AR27M;
+				DEVELOPMENT_TEAM = X9KW2SQ39Q;
 				INFOPLIST_FILE = UsingMicrosoftVision/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ispy.julianStrawn;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emikoclark.jeopardySoundTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -341,10 +343,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JJQX5AR27M;
+				DEVELOPMENT_TEAM = X9KW2SQ39Q;
 				INFOPLIST_FILE = UsingMicrosoftVision/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ispy.julianStrawn;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emikoclark.jeopardySoundTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

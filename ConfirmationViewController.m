@@ -8,6 +8,8 @@
 
 #import "ConfirmationViewController.h"
 #import "Constants.h"
+#import "QuestionViewController.h"
+#import "FinalScoreViewController.h"
 
 @interface ConfirmationViewController ()
 
@@ -27,7 +29,11 @@
         [self dataReceived:note];
     }];
     
-    
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    NSString *string = [NSString stringWithFormat:@"%ld/5",(long)self.totalNumberOfAnswers];
+    self.numberOfAnswersLabel.text = string;
 }
 
 
@@ -44,9 +50,6 @@
 
 
 - (void) parseData {
-//    for (NSDictionary *item in self.dictToParse) {
-//        
-//    }
     
     NSDictionary *description = [self.dictToParse objectForKey:@"description"];
     
@@ -61,18 +64,35 @@
     for (NSString *item in tagArray) {
         if ([item isEqualToString:self.itemToFind]) {
             self.didItemMatch = true;
-            self.confirmationTextView.text = @"You found it!";
+            self.confirmationTextView.text = @"\nYou found it!";
+            self.numberOfCorrectAnswers += 1;
+            self.totalNumberOfAnswers += 1;
         }
     }
     
     if (self.didItemMatch == false) {
-        self.confirmationTextView.text = [NSString stringWithFormat:@"That object was not %@-y enough!", self.itemToFind];
+        self.confirmationTextView.text = [NSString stringWithFormat:@"\nThat object was not %@-y enough!", self.itemToFind];
+//        self.totalNumberOfAnswers += 1;
     }
+    
 }
 
 
 - (IBAction)didPressNextButton:(id)sender {
     
+    if (self.totalNumberOfAnswers < 5) {
+        //push to QuestionViewController
+        [self dismissViewControllerAnimated:YES completion:nil];
+        
+    } else  {
+        
+        //push to the "final results" viewcontroller
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        FinalScoreViewController *myVC = (FinalScoreViewController *)[storyboard instantiateViewControllerWithIdentifier:@"playAgain"];
+        
+        [self presentViewController:myVC animated:YES completion:nil];
+        
+    }
     
     
 }
