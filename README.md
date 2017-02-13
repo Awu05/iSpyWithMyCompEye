@@ -1,5 +1,7 @@
 # iSpyWithMyCompEye
 
+TurnToTech Hack-a-Thon
+
 Our App:
 
 This is a simple iSpy game which involves taking a picture of a random specified object. 
